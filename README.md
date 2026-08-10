@@ -133,7 +133,7 @@ options:
 
 ```
 
-### Examples:
+### Example:
 
 ```bash
 admin@ubuntu:~$ python3 recontr.py --containers-only
