@@ -136,6 +136,29 @@ options:
 ### Example:
 
 ```bash
+admin@ubuntu:~$ python3 recontr.py 
+
+▀▀▀▀▀▀▓▓▄ ▀▀▀▀▀▀▓▓▀ ▀▀▀▀▀▀▓▓▀ ▀▀▀▀▀▀▓▓▄ ▀▀▀▀▀▀▓▓▄ ▀▀▓▓▓▀▀ ▀▀▀▀▀▀▓▓▄
+▒▒▒▀▀▀▒▒▄ ▒▒▒▀▀ ▀   ▒▒▒ █ ▀   ▒▒▒ █ ▒▒▓ ▒▒▒ █ ▒▒▒ █ ▒▒▒ █ ▒▒▒▀▀▀▒▒▄
+░░░ █ ░░░ ░░░ ▀ ░░░ ░░░ ▀ ░░░ ░░░ ▀ ░░░ ░░░ █ ░░░ █ ░░░ █ ░░░ █ ░░░
+▀▀▀   ▀▀▀  ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀  ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀   ▀▀▀
+                                                        by infrar3d                                                                       
+
+PID     USER           PROCESS               CONTAINER   RUNTIME       NAMESPACES               FINDINGS                                                                                                                                    
+------------------------------------------------------------------------------------------------------------------------                                                                                                                    
+1       root           systemd               LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+2       root           kthreadd              LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+3       root           pool_workqueue_releaseLOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+4       root           kworker/R-rcu_gp      LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+5       root           kworker/R-sync_wq     LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+6       root           kworker/R-kvfree_rcu_reclaimLOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                       
+7       root           kworker/R-slub_flushwqLOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+8       root           kworker/R-netns       LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                             
+9       root           kworker/0:0-mm_percpu_wqLOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled                                           
+10      root           kworker/0:0H-kblockd  LOW         -             -                        runs-as-root,CAP_SYS_ADMIN,CAP_SYS_PTRACE,CAP_SYS_MODULE,seccomp-disabled,no-new-privs-disabled
+```
+
+```bash
 admin@ubuntu:~$ python3 recontr.py --containers-only
 
 ▀▀▀▀▀▀▓▓▄ ▀▀▀▀▀▀▓▓▀ ▀▀▀▀▀▀▓▓▀ ▀▀▀▀▀▀▓▓▄ ▀▀▀▀▀▀▓▓▄ ▀▀▓▓▓▀▀ ▀▀▀▀▀▀▓▓▄
